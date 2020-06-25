@@ -1,0 +1,6 @@
+- name: GS Commit Message Checker
+  uses: GsActions/commit-message-checker@v1
+  with:
+    # A regex pattern to check if a commit message is valid.
+    pattern: '/(^MDVA-)([0-9]+: )(.+)/g'
+    error: 'Commit message did not match the format [MDVA-XXXX]: [ticket title]'
