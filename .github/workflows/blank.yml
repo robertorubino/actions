@@ -9,5 +9,5 @@ jobs:
       - name: Check Commit Type
         uses: gsactions/commit-message-checker@v1
         with:
-          pattern: '/(^MDVA-)([0-9]+: )(.+)/g'
+          pattern: '(^MDVA-)([0-9]+: )(.+)'
           error: 'Commit message did not match the format [MDVA-XXXX]: [ticket title]'
